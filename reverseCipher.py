@@ -1,7 +1,8 @@
+#!/usr/bin/env python3
+
 # Reverse Cipher
 
 # Variable to hold secret messages
-# message = 'egassem terces a si sihT'
 message = input('Enter message: ')
 
 #Holds encrypted messages
