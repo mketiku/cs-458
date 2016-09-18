@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 # Constants
-CIPHER_MENU= ['shift','substitution','affine','vigenere' ]
+CIPHER_MENU= ['shift','substitution','affine','vigenere']
 
 # Alphabet encoding scheme
 LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'

@@ -17,4 +17,4 @@ while i >= 0:
     #Check that everything works well
     # print(i, message[i], translated )
 
-print(translated)
+print('Reversed message:', translated)
