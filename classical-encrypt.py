@@ -1,24 +1,13 @@
 #!/usr/bin/env python3
 
-# # Caesar Cipher
-# import pyperclip
-#
-#
-# # message = input('Enter your message')
-# message = 'This is a secret message'
-#
-# # Key used to encrypt the message
-# key = 13
-#
-# mode = 'encrypt'
-#
-# # Constant variables
-# LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-# translated =
+# Constants
+CIPHER_MENU= ['shift', 'substitution', 'affine', 'vigenere']
 
-# Caesar Cipher
+# Alphabet encoding scheme
+# LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 MAX_KEY_SIZE = 26
+
 
 def getMode():
     while True:
@@ -29,9 +18,18 @@ def getMode():
         else:
             print('Enter either "encrypt" or "e" or "decrypt" or "d".')
 
+
+def getCipherType():
+    print("Select a type of Cipher")
+    return input()
+
+
+# print(getCipherType())
+
 def getMessage():
     print('Enter your message:')
     return input()
+
 
 def getKey():
     key = 0
@@ -40,6 +38,7 @@ def getKey():
         key = int(input())
         if (key >= 1 and key <= MAX_KEY_SIZE):
             return key
+
 
 def getTranslatedMessage(mode, message, key):
     if mode[0] == 'd':
@@ -70,6 +69,7 @@ def getTranslatedMessage(mode, message, key):
 mode = getMode()
 message = getMessage()
 key = getKey()
+ctype = getCipherType()
 
 print('Your translated text is:')
 print(getTranslatedMessage(mode, message, key))
