@@ -1,16 +1,8 @@
 """
 Substitution Cipher
-The substitution cipher is one in which one value maps to another value to
-form a table. For instance:
     A == F
     B == Z
     ...
-This cipher is not secure as once the pairs are found out, any other
-ciphertext may be decrypted with ease. To crack it, most commonly letter
-frequencies are used.
-While we can make it harder to crack by using special characters, upper and
-lower case letters, and numbers, it still doesn't mean that it's a hard cipher
-to crack.
 """
 import random
 
